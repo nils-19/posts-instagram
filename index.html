@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390px, initial-scale=1.0">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 390px;
+    height: 390px;
+    overflow: hidden;
+    background: #f5f0e8;
+  }
+
+  .post {
+    width: 390px;
+    height: 390px;
+    background: #f5f0e8;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Bande gauche colorée */
+  .side-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: #1a1a2e;
+  }
+
+  /* Cercle décoratif */
+  .circle-deco {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 1px solid rgba(26,26,46,0.08);
+    bottom: -100px;
+    right: -80px;
+  }
+
+  .circle-deco2 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid rgba(26,26,46,0.06);
+    bottom: -40px;
+    right: -20px;
+  }
+
+  /* Contenu principal */
+  .content {
+    position: absolute;
+    top: 0;
+    left: 38px;
+    right: 30px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #9a8c7a;
+    margin-bottom: 18px;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.08;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+  }
+
+  .headline em {
+    font-style: italic;
+    font-weight: 400;
+    color: #9a8c7a;
+  }
+
+  .sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #9a8c7a;
+    margin-bottom: 26px;
+  }
+
+  .line {
+    width: 36px;
+    height: 1px;
+    background: #1a1a2e;
+    margin-bottom: 20px;
+  }
+
+  .desc {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #5a5248;
+    max-width: 280px;
+  }
+
+  /* Tags bas */
+  .tags {
+    position: absolute;
+    bottom: 28px;
+    left: 38px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tag-list {
+    display: flex;
+    gap: 8px;
+  }
+
+  .tag {
+    font-family: 'Jost', sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #f5f0e8;
+    background: #1a1a2e;
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+
+  .handle {
+    font-family: 'Jost', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    color: #9a8c7a;
+    letter-spacing: 0.1em;
+  }
+
+  /* Numéro déco */
+  .big-number {
+    position: absolute;
+    top: 18px;
+    right: 28px;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    color: rgba(26,26,46,0.15);
+    letter-spacing: 0.1em;
+  }
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="side-bar"></div>
+  <div class="circle-deco"></div>
+  <div class="circle-deco2"></div>
+
+  <div class="big-number">01 / AUTOMATISATION</div>
+
+  <div class="content">
+    <div class="eyebrow">Conciergerie Airbnb · Paris</div>
+    <div class="headline">
+      Gérez<br>moins.<br><em>Gagnez</em><br>plus.
+    </div>
+    <div class="line"></div>
+    <div class="desc">
+      J'automatise vos tâches répétitives —<br>
+      ménage, relances, prestataires.<br>
+      Vous vous concentrez sur l'essentiel.
+    </div>
+  </div>
+
+  <div class="tags">
+    <div class="tag-list">
+      <div class="tag">Airbnb</div>
+      <div class="tag">Automatisation</div>
+      <div class="tag">Paris</div>
+    </div>
+    <div class="handle">nils.autoflow</div>
+  </div>
+</div>
+</body>
+</html>
